@@ -1,16 +1,16 @@
 apiVersion : apps/v1beta1
 kind: Deployment
 metadata:
-  name: "gauravakscluster"
+  name: "gaurav-akscluster"
 spec:
   replicas: 2
   template:
     metadata:
       labels:
-        app: "myakscluster"
+        app: "gaurav-akscluster"
     spec:
       containers:
-        - name: "gauravakscluster"
-          image: "gauravregistry.azurecr.io/gauravakscluster"
+        - name: "gaurav-akscluster"
+          image: "gauravregistry.azurecr.io/gaurav-akscluster"
           ports:
           - containerPort: 8080
