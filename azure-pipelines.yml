@@ -16,10 +16,8 @@ variables:
   containerRegistry: 'gauravregistry.azurecr.io'
   dockerfilePath: '**/Dockerfile'
   tag: '$(Build.BuildId)'
-  imagePullSecret:
-  -  name: secret1
-
-
+  imagePullSecrets:
+  - name: secret1
   # Agent VM image name
   vmImageName: 'ubuntu-latest'
   
