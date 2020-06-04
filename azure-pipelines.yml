@@ -17,7 +17,7 @@ variables:
   dockerfilePath: '**/Dockerfile'
   tag: '$(Build.BuildId)'
   imagePullSecret:
-  - name: secret1
+  -  name: secret1
 
 
   # Agent VM image name
