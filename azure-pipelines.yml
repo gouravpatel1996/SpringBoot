@@ -20,10 +20,8 @@ variables:
     - name: secret1
 
   # Agent VM image name
-  vmImageName: 'ubuntu-latest'
-  
-
-stages:
+ vmImageName: 'ubuntu-latest'
+ stages:
 - stage: Build
   displayName: Build stage
   jobs:  
