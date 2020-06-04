@@ -1,7 +1,7 @@
 apiVersion : apps/v1beta1
 kind: Deployment
 metadata:
-  name: "myakscluster"
+  name: "gauravakscluster"
 spec:
   replicas: 2
   template:
@@ -10,7 +10,7 @@ spec:
         app: "myakscluster"
     spec:
       containers:
-        - name: "myakscluster"
-          image: "myspringbootdemoapp.azurecr.io/myakscluster"
+        - name: "gauravakscluster"
+          image: "gauravregistry.azurecr.io/gauravakscluster"
           ports:
           - containerPort: 8080
